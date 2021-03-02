@@ -1,0 +1,10 @@
+<div class="card" style="width: 15rem;">
+    <img class="card-img-top" [src]="img" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{ datosCard.name }}</h5>
+      <p class="card-text"> Estado : {{ datosCard.status}}</p>
+      <p class="card-text"> Especie : {{ datosCard.species}}</p>
+      <p class="card-text"> Genero : {{ datosCard.gender}}</p>
+      <a href="#"  (click)="addFavoritos()" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
