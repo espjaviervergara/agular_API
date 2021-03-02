@@ -1,0 +1,14 @@
+<app-header></app-header>
+<div class="container-fluid">
+  <div class = "row">
+    <button type="button" class="btn btn-outline-primary" (click)="cargarDatos()">Cargar más</button>
+    <button type="button" class="btn btn-outline-secondary" (click)="regresarDatos()" [disabled] = "prev === null ? true : false">Regresar</button>
+  </div>
+  <div class="row">
+    <app-sidebar class="ml-2" [datosCard]="card" *ngFor = "let card of listCards"></app-sidebar>
+
+  </div>
+
+    <app-favoritos></app-favoritos>
+
+</div>
