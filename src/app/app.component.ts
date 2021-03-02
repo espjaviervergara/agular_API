@@ -27,8 +27,8 @@ export class AppComponent implements OnInit  {
       this.next = respuesta['info']['next'];
       this.prev = respuesta['info']['prev'];
 
-      console.log( 'Next = ' + this.next);
-      console.log( 'Previous =' + this.prev);
+      /* console.log( 'Next = ' + this.next);
+      console.log( 'Previous =' + this.prev); */
     });
   }
 
